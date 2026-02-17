@@ -1,0 +1,11 @@
+id,name,wbs_code,predecessors,dist_type,a,m,b,category
+1,Basic & detail engineering,1.1,,betapert,20,30,45,design
+2,Permitting & approvals,1.2,1,betapert,15,25,50,permitting
+3,Site preparation,2.1,1,betapert,5,10,18,site_preparation
+4,Civil works & foundations,2.2,3,betapert,20,30,50,civil_works
+5,Electromechanical assembly,3.1,"2,4",betapert,25,40,65,electromechanical
+6,Piping installation,3.2,4,betapert,15,22,35,piping
+7,Instrumentation & control,3.3,"5,6",betapert,10,15,25,instrumentation
+8,Testing & verification,4.1,7,betapert,8,12,22,testing
+9,Commissioning,4.2,8,betapert,10,18,35,commissioning
+10,Handover & closeout,4.3,9,betapert,5,7,14,startup

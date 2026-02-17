@@ -1,0 +1,6 @@
+risk_id,name,probability,impact_dist_type,impact_min,impact_mode,impact_max,applies_to,category,status
+R1,Unexpected contaminant,0.25,triangular,8,15,28,"1,2,5",technical,active
+R2,Extreme weather event,0.20,triangular,5,10,20,"3,4,5,6",environmental,active
+R3,Equipment delivery delay,0.30,betapert,10,20,45,"5,6",supply_chain,active
+R4,Regulatory change,0.15,triangular,15,30,60,"1,2",regulatory,active
+R5,Unidentified risk reserve,0.07,uniform,15,45,90,all,residual,active

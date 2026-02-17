@@ -1,0 +1,48 @@
+{
+    "simulation": {
+        "n_iterations": 10000,
+        "random_seed": 42,
+        "confidence_levels": [0.50, 0.80, 0.90],
+        "convergence_check": true,
+        "convergence_tolerance": 0.005
+    },
+    "distributions": {
+        "default_type": "betapert",
+        "pert_lambda": 4,
+        "min_samples_for_fitting": 10
+    },
+    "risk": {
+        "unidentified_risk_probability": 0.07,
+        "unidentified_risk_impact_min": 15,
+        "unidentified_risk_impact_max": 90
+    },
+    "bayesian": {
+        "n_samples": 2000,
+        "n_chains": 2,
+        "n_tune": 1000,
+        "use_conjugate_fast": true
+    },
+    "ml": {
+        "model_type": "random_forest",
+        "n_estimators": 100,
+        "test_size": 0.2,
+        "cross_validation_folds": 5
+    },
+    "time_units": {
+        "default": "calendar_days",
+        "working_days_per_week": 5,
+        "working_hours_per_day": 8
+    },
+    "visualization": {
+        "histogram_bins": 50,
+        "figure_dpi": 150,
+        "color_scheme": "viridis"
+    },
+    "paths": {
+        "data_dir": "data",
+        "templates_dir": "data/templates",
+        "historical_dir": "data/historical",
+        "sample_dir": "data/sample",
+        "output_dir": "output"
+    }
+}
